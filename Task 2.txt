@@ -1,0 +1,1 @@
+I chose Autonomous Navigation because I find it exciting to design a robot that can move and make decisions on its own. I want to learn the skills behind intelligent movement and path planning to build a fully functional autonomous robot from scratch.
