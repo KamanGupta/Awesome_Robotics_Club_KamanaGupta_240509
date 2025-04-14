@@ -40,3 +40,10 @@ print("\nPath:")
 for step in path:
     print(step)
 print("Total Cost:", total)
+
+
+#Logic of code-
+#The code is designed to move a robot from a start point (S) to a goal point (G) on a 10×10 grid, where each cell has a movement cost depending on the terrain type. First, it takes the grid as input and identifies the coordinates of the start and goal. Then it explores different paths step by step, always choosing the next position based on two things:
+#1)The total cost to reach that position from the start.
+#2)An estimated distance from that position to the goal (called heuristic, using Manhattan distance).
+#The algorithm stores the cost of reaching each position (g_score) and remembers where each cell was reached from (came_from) to later reconstruct the path. If a new path to a position is cheaper than the previously known one, it updates the cost and continues. Once the goal is reached, it traces back the path using the came_from dictionary and prints each step along with the total cost. The logic ensures the robot avoids walls (#) and chooses the path with the least total cost, not necessarily the shortest distance.
